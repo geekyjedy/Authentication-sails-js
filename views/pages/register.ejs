@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background-image: url('/images/bg.jpg');
+          background-size: cover;
+          background-position: center;
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+        }
+    
+        ::placeholder {
+          color: #ffffff6a;
+          opacity: 1;
+        }
+      </style>
+    <title>registration</title>
+</head>
+
+<body>
+    <nav
+    style="display:flex; justify-content: space-around; align-items: center; height: 50px; background-color: rgba(66, 66, 66, 0.447); padding:10px;">
+        <div><img style="width:100%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            alt="logo" /></div>
+    </nav>
+    <div class="main" style="display: flex; justify-content: center; margin-top: 20px;">
+        <div class="container"
+        style="color: #ffffff; padding: 5rem; background-color: rgba(66, 66, 66, 0.447); font-family: 'Poppins', sans-serif;">
+            <form action="/register" method="POST" >
+                <span style="color: #eb0000e9"> *</span>
+                <div style="font-size: smaller; font-weight: lighter; display: inline;"> are required fields</div>
+                <div style="margin-top: 10px;">
+                    <label for="username" style="font-size: larger;">Name<span style="color:#eb0000e9">*</span></label>
+                    <input type="text" name="username" style="border-radius:5px; width:92%; padding:10px; border: none; background-color: rgba(66, 66, 66, 0.447); color: #ffffff"
+                        placeholder="Enter Your Name"> <br>
+                </div>
+                <div style="margin-top: 10px;">
+
+                    <label for="email" style="font-size: larger;">Email<span style="color:#eb0000e9">*</span></label>
+                    <input type="text" name="userEmail" style="border-radius:5px; width:92%; padding:10px; border: none; background-color: rgba(66, 66, 66, 0.447); color: #ffffff;"
+                        placeholder="Email Address"> <br>
+                </div>
+                <div style="margin-top: 10px;">
+
+                    <label for="password" style="font-size: larger;">Password<span
+                            style="color:#eb0000e9">*</span></label>
+                    <input type="password" name="password" style="border-radius:5px; width:92%; padding:10px; border: none; background-color: rgba(66, 66, 66, 0.447); color: #ffffff"
+                        placeholder="Set Password"> <br>
+                </div>
+                <div class="birthdate" style="margin-top: 20px;">
+                    <label for="birthdate">Birthdate<span style="color:#eb0000e9">*</span></label> <br>
+                    <span style="display:block; border-top:1px solid #3b3b3b; width: 100%;"></span>
+                    <label><input type="date" name="birthdate"
+                    style=" margin-top: 5px;border-radius:5px; padding:5px; border: none; background-color: rgba(66, 66, 66, 0.447);"></label>
+                </div>
+                <div class="gender" style=" justify-content: flex-start; margin-top: 20px; ">
+                    <label for="gender">Gender<span style="color:#eb0000e9">*</span></label> <br>
+                    <span style="display:block; border-top:1px solid #3b3b3b; width: 100%;"></span>
+                    <div>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="profession" style="margin-top: 20px;">
+                    <label for="profession">Profession<span style="color:#eb0000e9">*</span></label> <br>
+                    <span style="display:block; border-top:1px solid #3b3b3b; width: 100%;"></span>
+                    <label><input type="checkbox" name="profession" value="engineer">engineer</label>
+                    <label><input type="checkbox" name="profession" value="designer">designer</label>
+                    <label><input type="checkbox" name="profession" value="self-employed">self-employed</label> <br>
+                    <label><input type="checkbox" name="profession" value="mechanic">mechanic</label>
+                    <label><input type="checkbox" name="profession" value="architect">architect</label>
+                    <label><input type="checkbox" name="profession" value="doctor">doctor</label>
+                </div>
+                <div class="country" style="margin-top: 20px;">
+                    <label for="country">Country<span style="color:#eb0000e9">*</span></label> <br>
+                    <span style="display:block; border-top:1px solid #3b3b3b; width: 100%;"></span>
+                    <select name="country" type="dropdown"
+                        style="padding:4px; margin-top: 5px; border-radius: 5px; width: 50%; background-color: rgba(66, 66, 66, 0.447); border: none; color: #ffffff; ">
+                        <option value="india">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+                </div>
+                <div class="btndiv" style="display:flex;justify-content: center;">
+                    <input type="submit" value="submit"
+                    style="padding:7px; background-color: rgba(254, 208, 0, 0.773);border: none; font-size: large; border-radius: 5px;margin-top: 20px; width:100%; font-family: 'Poppins'; cursor:pointer;">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

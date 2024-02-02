@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+      background-image: url('/images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    ::placeholder {
+      color: #ffffff6a;
+      opacity: 1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>login</title>
+</head>
+
+<body>
+  <nav
+    style="display:flex; justify-content: space-around; align-items: center; height: 50px; background-color: rgba(66, 66, 66, 0.447); padding:10px;">
+    <div><img style="width:100%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+        alt="logo" /></div>
+    <div class="btnDiv">
+      <button
+        style="padding:5px 20px; background-color: rgba(254, 208, 0, 0.773);border: none; border-radius: 5px; font-family: 'Poppins'; cursor:pointer;"><a
+          href="/movies"
+          style="font-family: 'Poppins','sans-serif'; text-decoration: none; cursor: pointer; color:black; ">
+          Movies</a></button>
+    </div>
+  </nav>
+  <div class="main" style="display:flex; justify-content:center; margin-top: 90px; ">
+    <div class="container"
+      style="color: #ffff; padding: 5rem; background-color: rgba(66, 66, 66, 0.447); font-family: 'Poppins', sans-serif;">
+      <form action="/login" method="POST">
+        <label for="email" style="font-size: larger; ">Email :</label> <br>
+        <input type="text" name="email"
+          style="border-radius:5px; width:92%; padding:10px; border: none; background-color: rgba(66, 66, 66, 0.447); color:#ffffff "
+          placeholder="Email Address">
+        <br>
+
+        <div style="margin-top: 15px;">
+          <label for="email" style="font-size: larger;">Password :</label> <br>
+          <input type="password" name="password"
+            style="border-radius:5px; width:92%; padding:10px; border: none; background-color: rgba(66, 66, 66, 0.447);color:#ffffff"
+            placeholder="Password"> <br>
+        </div>
+        <div class="btndiv" style="display:flex;justify-content: center; margin-top: 10px;">
+          <input type="submit" name="button" value="login"
+            style="padding:7px; background-color: rgba(254, 208, 0, 0.773);border: none; font-size: large; border-radius: 5px;margin-top: 20px; width:100%; font-family: 'Poppins'; cursor:pointer;">
+          <br>
+        </div>
+      </form>
+      <span style="display:block; border-top:2px solid #1e1e1e; margin-top: 35px; width: 100%;"></span>
+      <div style="margin-top: 25px;">
+        <label for="newuser">New User?</label>
+        <a href="/register" style="font-size: small; font-weight: 100;  color: rgba(254, 208, 0, 0.773); ">create
+          account</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const alertMessage = '<%= typeof alert !== "undefined" ? alert : "" %>';
+    if (alertMessage) {
+      alert(alertMessage);
+    }
+  </script>
+</body>
+
+</html>
